@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../font/fonts.css">
+</head>
+<body class="outfit">
+    <main class="bg-[hsl(217,54%,11%)] flex justify-center pt-32 pb-52">
+        <article class="bg-[hsl(216,50%,16%)]  rounded-3xl grid justify-center p-5 md:p-8 gap-5">
+            <div class="relative group rounded-2xl overflow-hidden cursor-pointer">
+                <img src="../images/image-equilibrium.jpg" alt="image-equilibrium" class="w-[19vw] h-auto min-w-[325px] max-w-full object-contain rounded-2xl 
+                hover:cursor-pointer">
+                
+                <div class="absolute inset-0 bg-[#00fff77a] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                <img src="../images/icon-view.svg" alt="icon-view" class="absolute top-[43%] left-[44%] ase-in-out opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+            </div>            
+            <div class="grid gap-3">
+                <h1 class="text-[clamp(1.2rem,1.3vw,10rem)] font-semibold text-white hover:text-[hsl(178,100%,50%)] duration-500 ease-in-out cursor-pointer">Equilibrium #3429</h1>
+                <p class="text-[clamp(1.1rem,1.1vw,10rem)] text-[hsl(215,25%,59%)] font-light">Our Equilibrium collection promotes<br>
+                    balance and calm.</p>
+                <div class="flex items-center justify-between border-b pb-5 border-[hsl(215,32%,27%)]">
+                    <span class="flex items-center gap-3">
+                        <img src="../images/icon-ethereum.svg" alt="icon-ethereum">
+                        <p class="text-[clamp(1rem,0.9vw,10rem)] text-[hsl(178,100%,50%)] font-semibold">0.041 ETH</p>
+                    </span>
+                    <span class="flex items-center gap-3">
+                        <img src="../images/icon-clock.svg" alt="icon-clock">
+                        <p class="text-[clamp(1rem,0.9vw,10rem)] text-[hsl(215,25%,59%)]">3 days left</p>
+                    </span>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 ">
+                <img src="../images/image-avatar.png" alt="image-avatar" class="w-[40px] border rounded-full border-white">
+                <p class="text-[hsl(215,25%,59%)] text-[clamp(1.1rem,1vw,10rem)] font-light">Creation of 
+                    <span class="text-white hover:text-[hsl(178,100%,50%)] duration-500 ease-in-out cursor-pointer">
+                        Jules Wyvern</span></p>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
